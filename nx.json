@@ -1,11 +1,11 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "mono",
+  "npmScope": "mnopi",
   "affected": {
     "defaultBase": "main"
   },
   "cli": {
-    "defaultCollection": "@nrwl/workspace"
+    "defaultCollection": "@nrwl/node"
   },
   "implicitDependencies": {
     "package.json": {
@@ -18,13 +18,8 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
-        "accessToken": "ZjI1Y2JkY2EtOTljOC00NDBhLWFlMTEtY2MwYzNmYTk0MDkwfHJlYWQtd3JpdGU="
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "NjMwMWE0YTctZjk0Ni00NDhjLTlhYjctYzlkMTY0Mjk4MGNjfHJlYWQtd3JpdGU="
       }
     }
   },
@@ -35,5 +30,6 @@
         "projects": "dependencies"
       }
     ]
-  }
+  },
+  "defaultProject": "bbin"
 }

@@ -1,5 +1,9 @@
 {
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
-  "projects": {}
+  "projects": {
+    "functions-bbin": "apps/functions/bbin",
+    "plugins-nx-cf": "libs/plugins/nx-cf",
+    "plugins-nx-cf-e2e": "apps/plugins/nx-cf-e2e"
+  }
 }
