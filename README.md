@@ -1,14 +1,21 @@
-# Workers
+# Mono
+
+
+## Testing
+
+### [Denoflare](https://blog.logrocket.com/develop-test-deploy-cloudflare-workers-denoflare/)
+Uses [deno](https://github.com/denoland/deno)
 
 ```shell
-npx create-nx-workspace --name mono --preset=apps --nxCloud --ci github --cli nx
-# npm init nx-workspace
-# npx create-nx-workspace
+deno install --root /usr/local -A --unstable  \
+  -n denoflare https://raw.githubusercontent.com/skymethod/denoflare/master/cli/cli.ts 
 
-npm i -D nx @nrwl/node
-nx generate @nrwl/node:app bbin --directory functions --setParserOptionsProject 
 
-# Plugin for cf (generators/executors)
-npm install -D @nrwl/nx-plugin
-nx g @nrwl/nx-plugin:plugin nx-cf --directory plugins --importPath @mnopi/nx-cf --setParserOptionsProject 
+```
+
+### [Miniflare](https://blog.cloudflare.com/miniflare/)
+Native uses wrangler dev
+```shell
+
+
 ```

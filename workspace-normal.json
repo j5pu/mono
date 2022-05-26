@@ -3,7 +3,6 @@
   "version": 2,
   "projects": {
     "functions-bbin": "apps/functions/bbin",
-    "functions-denoflare": "apps/functions/denoflare",
     "plugins-nx-cf": "libs/plugins/nx-cf",
     "plugins-nx-cf-e2e": "apps/plugins/nx-cf-e2e"
   }

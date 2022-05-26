@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="true" type="DenoConfigurationType" singleton="false" programParameters="run -A --unstable">
+    <option name="allowRunningInParallel" value="true" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

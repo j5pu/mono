@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "denoflare": "deno --quiet --unstable run -A --unstable https://raw.githubusercontent.com/skymethod/denoflare/master/cli/cli.ts"
+  }
+}

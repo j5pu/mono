@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "functions-bbin": {
+      "root": "apps/functions/bbin",
+      "targets": {
+        "dev": {
+          "executor": "nx:run-script",
+          "outputs": ["apps/functions/bbin/dist", "packaged/frontend/docs"],
+          "options": {
+            "script": "dev"
+          }
+        }
+      }
+    },
+    "plugins-nx-cf": "libs/plugins/nx-cf",
+    "plugins-nx-cf-e2e": "apps/plugins/nx-cf-e2e"
+  }
+}

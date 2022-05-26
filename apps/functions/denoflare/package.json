@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "compile": "deno compile -A -o ../../../dist/apps/functions/bbin/index src/index.ts",
+    "dev": "wrangler dev src/index.ts",
+    "lint": "deno lint",
+    "publish": "denoflare push denoflare",
+    "serve": "denoflare serve denoflare",
+    "start": "npm run serve",
+    "test": "start-server-and-test http://127.0.0.1:8080 'deno test -A  --unstable --fail-fast'"
+  },
+  "nx": {
+    "targets": {
+      "dev": {
+        "dependsOn": [
+          "compile", "lint"
+        ]
+      },
+      "publish": {
+        "dependsOn": [
+          "test"
+        ]
+      },
+      "start": {
+        "dependsOn": [
+          "compile", "lint"
+        ]
+      }
+    }
+  }
+}
