@@ -1,11 +1,11 @@
 {
   "scripts" : {
-    "denoflare": {
-      "path": "./src/index.ts",
+    "bbin": {
+      "path": "./functions/bbin/src/index.ts",
       "bindings": {
         "kv": {"kvNamespace": "0fe30886bb3a4591bc8b9d8d13237495"}
       },
-      "customDomains": [ "denoflare.mnopi.com" ]
+      "customDomains": [ "bbin.mnopi.com" ]
     }
   }
 }

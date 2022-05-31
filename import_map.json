@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "denoflare/": "https://raw.githubusercontent.com/skymethod/denoflare/v0.5.1/",
+    "testing/": "https://deno.land/std@0.140.0/testing/"
+  }
+}

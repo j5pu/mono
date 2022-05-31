@@ -1,0 +1,11 @@
+{
+  "importMap": "import_map.json",
+  "tasks": {
+    "compile": "deno compile -A -o /tmp/compile functions/bbin/src/index.ts",
+    "denoflare": "deno --quiet --unstable run -A --unstable https://raw.githubusercontent.com/skymethod/denoflare/master/cli/cli.ts",
+    "lint": "deno task compile && deno lint",
+    "publish": "deno task test && deno task denoflare push bbin && curl bbin.mnopi.com | grep -q '#!/bin/sh'",
+    "start": "deno task lint && deno task denoflare serve bbin",
+    "test": "start-server-and-test 'deno task start' http://127.0.0.1:8080 'deno test -A --unstable --fail-fast'"
+  }
+}
